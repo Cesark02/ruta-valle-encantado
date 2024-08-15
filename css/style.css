@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: "Bronova";
+    scroll-behavior: smooth;
+    cursor: url(../img/cursor\ flechita.png), auto;
+}
+a{
+    cursor: url(../img/cursor.png), auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+@font-face{
+    font-family: 'A Grazing Mace';
+    src: url("../font/A-Grazing-Mace/A\ Grazing\ Mace.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Bronova';
+    src: url('../font/Bronova/otf/Bronova\ Bold.otf');
+    src: url('../font/Bronova/otf/Bronova\ Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/* ========================== Inicio Header y Nav ========================== */
+header{
+    height: 1024px;
+    background: url(../img/Imagen\ fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.logo img{
+    width: 201px;
+    height: 63px;
+}
+.nav-container{
+    position: fixed;
+    width: 100%;
+    transition: 400ms;
+    z-index: 10;
+    display: flex;
+    padding: 2.5rem 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.nav-toggle, .nav-close{
+    display: none;
+}
+.nav-botones{
+    max-width: 50%;
+    color: black;
+    margin-left: 3.5rem;
+    transition: 30ms;
+}
+.nav-botones:hover{
+    color: #86469C;
+}
+
+
+/* Efecto menu javascript */
+.nav-white{
+    background: white;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.nav-black{
+    background: black;
+    
+}
+.navbtn-white{
+    color: white;
+}
+/* Efecto menu javascript */
+
+
+/* ========================== Info Banner ========================== */
+
+
+.banner-info{
+    width: 80.9rem;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    padding-bottom: 10.5rem;
+    padding-right: 10rem;
+}
+h1{
+    font-family: "A Grazing Mace";
+    font-size: 9.6rem;
+    width: 70.9;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+.banner-info p{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+
+
+.btn{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    background: #86469C;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    color: #86469C;
+    background: white;
+    border:#662D91 solid;
+}
+
+
+
+/* ----------------textos------------------*/
+.subtitulos-s{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.subtitulos-l{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+.parrafos{
+    font-size: 2.2rem;
+}
+.parrafos-s{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.subtitulos-bonitos{
+    font-size: 3.3rem;
+    font-family: 'A Grazing Mace';
+}
+h2{
+    font-family: 'A Grazing Mace';
+    font-size: 5.5rem;
+}
+h3{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+#purple{
+    color: #BE00FF;
+}
+span{
+    font-weight: bold;
+}
+/*---------------- Main ----------------*/
+/* Section des-carrera */
+.des-carrera{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+.des-carrera div{
+    display: flex;
+    flex-direction: column;
+    width: 89.3rem;
+}
+.des-carrera .parrafos{
+    text-align: justify;
+    margin: 40px 0px;
+}
+.des-carrera .subtitulos-s{
+    text-align: center;
+}
+/* Section intro */
+.intro{
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+/*  inicio Div zona */
+.zona{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background: black;
+}
+.zona img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-zona{
+    width: 50.3rem;
+    text-align: center;
+}
+.info-zona .subtitulos-s{
+    margin: 40px 0px;
+}
+.info-zona p{
+    color: white;
+}
+/*  Final Div zona */
+/* Inicio Div Carrera */
+.ciclismo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background: black;
+}
+.ciclismo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-carrera{
+    width: 50.3rem;
+    text-align: center;
+}
+.info-carrera .subtitulos-s{
+    margin: 40px 0px;
+}
+.info-carrera p{
+    color: white;
+}
+/* Final section intro */
+/* Inicio section ruta */
+.divisor{
+    display: flex;
+    align-items: center;
+    padding: 10rem 0rem 10rem 10rem;
+}
+.raya-morada{
+    flex: 1 0 0;
+    height: 1.7rem;
+    background: #86469C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.divisor h2{
+    margin-right: 1.6rem;
+}
+.ruta{
+    display: flex;
+    flex-direction: column;
+}
+.info-ruta{
+    padding: 0 30.9rem 10rem 30.9rem;
+}
+.info-ruta :nth-child(2){
+    margin-top: 7rem;
+}
+.mapa-ruta{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.mapa-ruta img{
+max-width: 100%;
+}
+.mapa-ruta .subtitulos-l{
+    margin: 2rem 0;
+}
+.botones-rutas{
+    width: 48.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/* Final section ruta */
+/* Inicio section img-carrera */
+.imagen-carrera{
+    display: flex;
+}
+.img-carrera{
+    width: 100%;
+    height: 38.3rem;
+    color: white;
+    background: url(../img/img-carrera.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-dia .subtitulos-l{
+    margin-bottom: 4rem;
+}
+/* Final section img-carrera */
+/* Inicio paquetes de inscripcion */
+.paquetes{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+.paquete-simple{
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+    height: 22rem;
+    padding: 50px;
+    gap: 7.25rem;
+    border: 3px solid #662D91;
+    transition: all 350ms ease-in-out;
+}
+.precio{
+    width: 35rem;
+    display: flex;
+    height: 12rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.informacion-paquete{
+    width: 70.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.8rem;
+}
+.paquete-full{
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+    height: 22rem;
+    padding: 50px;
+    gap: 7.25rem;
+    border: 3px solid #662D91;
+    transition: all 350ms ease-in-out;
+}
+.paquete-simple:hover{
+    background: #662D91;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5%);
+    color: white;
+}
+.paquete-full:hover{
+    background: #662D91;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5%);
+    color: white;
+}
+/* final paquetes de inscripcion */
+/* Inicio formulario de inscripcion */
+.inscripciones{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 0px 100px 100px 100px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario input{
+    background: #662D91;
+    border-radius: 13px;
+    color: white;
+    font-size: 22px;
+    width: 610px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    margin-bottom: 40px;
+    padding-right: 20px;
+}
+.formulario p{
+    font-size: 3rem;
+    font-family: 'A Grazing Mace';
+    height: 448;
+    text-align: center;
+}
+/* Final formulario de inscripcion */
+/* Checkbox */
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+.checkbox input{
+    width: 57px;
+    height: 57px;
+    margin-right: 20px;
+}
+.checkbox div{
+    display: flex;
+    align-items: center;
+}
+/* Final de la section con la inscripcion */
+/* Inicio de la section con el cronograma y su informacion */
+.cronograma{
+    background: url(../img/Fondo\ Cronograma.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 960px;
+    justify-content: center;
+    align-items: center;
+}
+.info-cronograma{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+.info-cronograma div{
+    display: flex;
+    width: 603px;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Final section cronograma */
+/* Inicio section de la camisa y los premios */
+.camisa-premios{
+    display: flex;
+    flex-direction: column;
+}
+.camisa{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background: linear-gradient(87deg, #000 32.87%, #662D91 91.39%, rgba(255, 255, 255, 0.25) 118.3%);
+}
+.info-camisa{
+    display: flex;
+    flex-direction: column;
+    width: 597px;
+    gap: 4rem;
+    color: white;
+}
+/* Final section camisa */
+/* Inicio section con el premio */
+.premio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.premio img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 817px;
+
+}
+.info-premio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+.info-premio div{
+    display: flex;
+    flex-direction: column;
+    width: 403px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* Final section premio */
+/* Inicio section con los servicios de ayuda */
+.servicios-profesionales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 70px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    gap: 40px;
+}
+.img-normal{
+    width: 370px;
+    height: 403px;
+}
+.img-hover{
+    position: absolute;
+    opacity: 0;
+    transition: ease-out 300ms;
+}
+.img-hover:hover{
+    opacity: 100;
+}
+/* Final section con laos serviox profecionales  */
+/* Section con los patrocinios  */
+
+.logos{
+    overflow: hidden;
+    padding-bottom: 30px;
+    white-space: nowrap;
+    position: relative;
+}
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{ 
+    left: 0;
+    background: linear-gradient(to left, transparent, white);
+}
+.logos:after{ 
+    right: 0;
+    background: linear-gradient(to right, transparent, white);
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+.logos-slide img{
+    height: 70px;
+    margin: 0 30px;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* Final slider */
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-div{
+    background: linear-gradient(278deg, #000 35.8%, #662D91 99.12%);
+    display: flex;
+    padding: 100px 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 106px;
+}
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    gap: 40px;
+}
+.contacto-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 112px;
+}
+.contacto address{
+    font-style: normal;
+    color: #fff;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.menu-footer a{
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    transition: 400ms;
+}
+.menu-footer a:hover{ 
+    color: #BE00FF;
+}
+.menu-footer{
+    display: flex;
+    width: 569px;
+    align-items: flex-start;
+    gap: 20px;
+}
+.derechos{
+    display: flex;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--Colores-Basicos-blanco, #FFF);
+    background: #662D91;
+    color: white;
+}
+/* ======================== Media Quary ========================  */
+/* Tamaño tablet */
+@media screen and (max-width: 1365px){
+    /* ================ Menu Hamburguesa =================== */
+    .nav-toggle, .nav-close{
+        display: block;
+        cursor: url(../img/mano.png) auto;
+    }
+    .nav.container{
+        position: relative;
+    }
+    .nav-menu{
+        position: absolute;
+        background: linear-gradient(61deg, #662D91 3.34%, #000 100%);
+        width: 100%;
+        flex-direction: column;
+        left: 0;
+        top: -500%;
+        text-align: left;
+        gap: 80px;
+        padding: 50px 0;
+        font-family: 'A Grazing Mace';
+        transition: top .3s;
+    }
+    .nav-close{
+        position: absolute;
+        right: 25px;
+        top: 10px;
+    }
+    .nav-botones{
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .nav-botones:hover{
+        color: #BE00FF;
+    }
+    .show-menu{
+        top: 0;
+    }
+    /* ================ Menu Hamburguesa =================== */
+    header{
+        height: 768px;
+        background-position: center;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .parrafos{
+        font-size: 15px;
+    }
+    /* Des-carrera */
+    .des-carrera{
+        text-align: center;
+    }
+    .inscripciones{
+        padding: 0 50px 50px 50px;
+        flex-wrap: wrap;
+    }
+    .formulario input{
+        width: 430px;
+        align-self: center;
+    }
+    .camisa{
+        gap: 35px;
+    }
+    .contacto{
+        justify-content: center;
+    }
+    .footer-div{
+        flex-direction: column;
+    }
+    .redes-sociales{
+        flex-direction: row;
+    }
+}
+/* Tamaño movil */
+@media screen and (max-width: 1024px){
+    header{
+        height: 1024px;
+        background-position: center;
+    }
+    .des-carrera{
+        padding: 100px;
+    }
+    .img-carrera{
+        padding: 0 100px;
+        background-position: center;
+    }
+    .parrafos{
+        font-size: 1.5rem;
+    }
+    .subtitulos-s{
+        font-size: 1.5rem;
+    }
+    .subtitulos-l{
+        font-size: 3.0rem;
+    }
+    #subtitulos-bonitos{
+        font-size: 2.4rem;
+    }
+    h1{
+        font-size: 5.5rem;
+    }
+    h2{
+        font-size: 4.0rem;
+    }
+    h3{
+        font-size: 3.5rem;
+    }
+    .intro{
+        gap: 50px;
+        background: black;
+    }
+    .zona{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+    }
+    .zona img{
+        width: 500px;
+    }
+    .ciclismo{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+    .ciclismo .info-carrera{
+        order: 2;
+    }
+    .ciclismo img{
+        width: 500px;
+    }
+    .info-ruta{
+        padding: 0 100px 100px;
+    }
+    .banner-info{
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .camisa{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .info-camisa{
+        text-align: center;
+        width: 388px;
+    }
+}
