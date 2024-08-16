@@ -274,7 +274,7 @@ span{
     padding-bottom: 10rem;
 }
 .mapa-ruta img{
-max-width: 100%;
+    max-width: 100%;
 }
 .mapa-ruta .subtitulos-l{
     margin: 2rem 0;
@@ -426,7 +426,6 @@ max-width: 100%;
 }
 .info-cronograma div{
     display: flex;
-    width: 603px;
     flex-direction: column;
     gap: 10px;
 }
@@ -618,7 +617,6 @@ footer{
 }
 .menu-footer{
     display: flex;
-    width: 569px;
     align-items: flex-start;
     gap: 20px;
 }
@@ -649,7 +647,7 @@ footer{
         width: 100%;
         flex-direction: column;
         left: 0;
-        top: -500%;
+        top: -600%;
         text-align: left;
         gap: 80px;
         padding: 50px 0;
@@ -781,5 +779,84 @@ footer{
     .info-camisa{
         text-align: center;
         width: 388px;
+    }
+}
+/* Tamaño movil  */
+@media screen and (max-width: 550px){
+    .nav-container{
+        padding: 2.5rem 5rem;
+    }
+    .logo img{
+        width: 100px;
+        height: 32px;
+    }
+    header{
+        background: url(../img/banner\ movil.jpg) no-repeat;
+        background-size: initial;
+    }
+    .banner-info p{
+        font-size: 1.5rem;
+    }
+    .divisor{
+        padding: 5rem 0 5rem 5rem;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 2.7rem;
+    }
+    .banner-info{
+        width: initial;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .des-carrera{
+        padding: 50px;
+    }
+    .zona img{
+        width: 300px;
+    }
+    .ciclismo img{
+        width: 300px;
+    }
+    .cronograma{
+        padding: 0 50px;
+    }
+    .paquetes{
+        padding: 0 50px;-
+    }
+    .paquete-simple, .paquete-full{
+        flex-direction: column;
+        width: initial;
+    }
+    .cards{
+        padding: 0 50px;
+    }
+    .cards img{
+        width: 200px;
+        height: 200px;
+    }
+    .redes-sociales img{
+        width: 110px;
+    }
+    .footer-div{
+        padding: 50px;
+    }
+    .menu-footer a{
+        font-size: 1.5rem;
+    }
+    .logos-slide img{
+        height: 45px;
+    }
+    .derechos{
+        padding: 20px 50px;
+    }
+    .derechos p{
+        font-size: 1rem;
     }
 }
