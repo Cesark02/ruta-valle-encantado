@@ -617,7 +617,7 @@ footer{
 }
 .menu-footer{
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .derechos{
@@ -809,8 +809,14 @@ footer{
     h3{
         font-size: 2.7rem;
     }
+    .subtitulos-l{
+        font-size: 20px;
+    }
     .banner-info{
         width: initial;
+    }
+    .info-carrera, .info-zona{
+        padding: 0 50px;
     }
     .btn{
         font-size: 1.5rem;
@@ -824,14 +830,30 @@ footer{
     .ciclismo img{
         width: 300px;
     }
+    .info-ruta{
+        padding: 50px;
+    }
+    .botones-rutas{
+        width: 400px;
+    }
     .cronograma{
         padding: 0 50px;
     }
+    .informacion-paquete{
+        width: initial;
+    }
     .paquetes{
-        padding: 0 50px;-
+        padding: 0 50px;
     }
     .paquete-simple, .paquete-full{
         flex-direction: column;
+        width: initial;
+        height: initial;
+        text-align: center;
+        gap: 50px;
+        padding: 25px;
+    }
+    .precio{
         width: initial;
     }
     .cards{
