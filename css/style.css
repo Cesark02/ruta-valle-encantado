@@ -790,10 +790,6 @@ footer{
         width: 100px;
         height: 32px;
     }
-    header{
-        background: url(../img/banner\ movil.jpg) no-repeat;
-        background-size: initial;
-    }
     .banner-info p{
         font-size: 1.5rem;
     }
@@ -814,9 +810,11 @@ footer{
     }
     .banner-info{
         width: initial;
+        padding-left: 50px;
     }
     .info-carrera, .info-zona{
         padding: 0 50px;
+        width: initial;
     }
     .btn{
         font-size: 1.5rem;
@@ -834,7 +832,7 @@ footer{
         padding: 50px;
     }
     .botones-rutas{
-        width: 400px;
+        width: 350px;
     }
     .cronograma{
         padding: 0 50px;
@@ -856,6 +854,9 @@ footer{
     .precio{
         width: initial;
     }
+    .formulario input{
+        width: 380px;
+    }
     .cards{
         padding: 0 50px;
     }
@@ -864,10 +865,14 @@ footer{
         height: 200px;
     }
     .redes-sociales img{
-        width: 110px;
+        width: 90px;
     }
     .footer-div{
         padding: 50px;
+        gap: 50px;
+    }
+    .contacto-menu{
+        gap: 50px;
     }
     .menu-footer a{
         font-size: 1.5rem;
